@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function Nav(){
     return (
         <header class="text-gray-400 bg-gray-900 body-font">
@@ -9,7 +11,7 @@ function Nav(){
           <span class="ml-3 text-xl" ><a href="App.jsx">SafeZone Sentinel</a></span>
         </a>
         <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
-          <a class="mr-5 hover:text-white" href="App.jsx">Home</a>
+          <a class="mr-5 hover:text-white" to="/">Home</a>
           <a class="mr-5 hover:text-white">Community</a>
           <a class="mr-5 hover:text-white">Zone</a>
           <a class="mr-5 hover:text-white">Report</a>

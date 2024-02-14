@@ -1,22 +1,32 @@
 import Nav from "./components/Nav";
-import Search from "./components/Search"
 import Footer from "./components/Footer";
-import Stats from "./components/Stats";
+import Home from "./pages/Home";
+import Zone from "./pages/Zone";
+// import {
+//   BrowserRouter as Router,
+//   Switch,
+//   Route,
+//   Link
+// } from "react-router-dom";
 
 function App() {
   return(
   <>
   <div>
+
     <Nav/>
-  </div>
-  <div>
-    <Search/>
-  </div>
-  <div>
-    <Stats/>
-  </div>
-  <div>
+    {/* <Switch>
+          <Route path="/Zone">
+            <Zone />
+          </Route>
+          <Route path="/">
+            <Home />
+          </Route>
+    </Switch> */}
+    <Home/>
+    {/* <Zone/> */}
     <Footer/>
+ 
   </div>
   </>
   )
